@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\common\glad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\ResourceManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\stb_image.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\texture.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\Texture2D.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\Scene.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\SceneTemplate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\paper\MarchingCubes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\study\billboard.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\study\blending_discard.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\study\bloom.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\study\deferred_shading.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\study\fog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\study\gerstner_water.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\study\normal_mapping.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\study\ParticleSystem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\study\S_fog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\study\shape_test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\study\sphere_draw.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\study\stencil_testing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\study\text_freetype.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\study\text_uv.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\shape\Cube.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\shape\ShapeFactory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\shape\Sphere.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\billboard\billboard.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\billboard\billboard.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\blending_discard\blending.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\blending_discard\blending.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\bloom\bloom.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\bloom\bloom.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\bloom\bloom_final.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\bloom\bloom_final.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\bloom\blur.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\bloom\blur.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\billboard\cube.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\billboard\cube.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\deferred_shading\deferred_light_box.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\deferred_shading\deferred_light_box.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\deferred_shading\deferred_shading.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\deferred_shading\deferred_shading.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\deferred_shading\g_buffer.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\deferred_shading\g_buffer.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\bloom\light_box.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\bloom\light_box.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\particle_system\particle_system.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\particle_system\particle_system.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\text_freetype\text.fs.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\text_freetype\text.vs.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\text_uv\text_uv.fs.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\text_uv\text_uv.vs.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shaders\stencil\stencil_single_color.fs" />
+    <None Include="shaders\stencil\stencil_testing.fs" />
+    <None Include="shaders\stencil\stencil_testing.vs" />
+    <None Include="shaders\sphere\sphere.fs" />
+    <None Include="shaders\sphere\sphere.vs" />
+    <None Include="shaders\fog\fog.vs" />
+    <None Include="shaders\fog\fog.fs" />
+    <None Include="shaders\water\water_fs.glsl" />
+    <None Include="shaders\water\water_vs.glsl" />
+    <None Include="shaders\base\base_fs.glsl" />
+    <None Include="shaders\base\base_vs.glsl" />
+    <None Include="shaders\sphere\sphere_vs.glsl" />
+    <None Include="shaders\sphere\sphere_fs.glsl" />
+    <None Include="shaders\marching_cubes\mc_fs.glsl" />
+    <None Include="shaders\marching_cubes\mc_vs.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\common\camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\Mesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\Model.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\opengl_debug.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\ResourceManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\Shader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\stb_image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\Text2D.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\texture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\Texture2D.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\SceneHead.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\Scene.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\SceneTemplate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\study\S_fog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\shape\Cube.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\shape\Shape.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\shape\ShapeFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\shape\Sphere.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

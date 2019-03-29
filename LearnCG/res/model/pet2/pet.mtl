@@ -1,0 +1,15 @@
+newmtl initialShadingGroup
+illum 4
+Kd 0.28 0.72 0.47
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd pet.png
+Ni 1.00
+Ks 0.26 0.26 0.26
+Ns 0.00

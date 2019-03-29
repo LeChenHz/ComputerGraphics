@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{4996F148-A901-46C7-9905-ABD8BEFEA4DB}</ProjectGuid>
+    <RootNamespace>HelloOpenGL</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <ProjectName>LearnCG</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>F:\Projects\openGL\OpenGL_stuff\include;F:\Program Files (x86)\opencv3.0.0beta\opencv\build\include\opencv2;F:\Program Files (x86)\opencv3.0.0beta\opencv\build\include\opencv;F:\Program Files (x86)\opencv3.0.0beta\opencv\build\include;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\Projects\openGL\OpenGL_stuff\lib;F:\Program Files (x86)\opencv3.0.0beta\opencv\build\x86\vc10\staticlib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>..\OpenGL_Lib\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\OpenGL_Lib\lib;$(LibraryPath)</LibraryPath>
+    <LibraryWPath>..\OpenGL_Lib\lib;$(LibraryWPath)</LibraryWPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir);</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link />
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;aassimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimpd.lib;freetype.lib;AntTweakBar64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\common\Text2D.cpp" />
+    <ClCompile Include="src\scenes\project\pet\LineFrameRenderer.cpp" />
+    <ClCompile Include="src\scenes\study\S_text_uv.cpp" />
+    <ClCompile Include="src\scenes\study\S_tweak_bar.cpp" />
+    <ClCompile Include="src\utils\ModelGenerator.cpp" />
+    <ClCompile Include="src\utils\FileReadUtil.cpp" />
+    <ClCompile Include="src\scenes\project\pet\OctTree.cpp" />
+    <ClCompile Include="src\common\Mesh.cpp" />
+    <ClCompile Include="src\common\Model.cpp" />
+    <ClCompile Include="src\common\Shader.cpp" />
+    <ClCompile Include="src\scenes\project\pet\CoinModel.cpp" />
+    <ClCompile Include="src\common\Camera.cpp" />
+    <ClCompile Include="src\scenes\project\pet\PetMathmaticalModel.cpp" />
+    <ClCompile Include="src\common\shape\Cube.cpp" />
+    <ClCompile Include="src\common\shape\ShapeFactory.cpp" />
+    <ClCompile Include="src\common\shape\Sphere.cpp" />
+    <ClCompile Include="src\main_test.cpp" />
+    <ClCompile Include="src\scenes\paper\MarchingCubes\S_MarchingCube_pointcloud.cpp" />
+    <ClCompile Include="src\scenes\paper\MarchingCubes\S_MarchingCube.cpp" />
+    <ClCompile Include="src\scenes\project\pet\ReadPetBigFile.cpp" />
+    <ClCompile Include="src\scenes\project\pet\S_Pet_Demo.cpp" />
+    <ClCompile Include="src\scenes\Scene.cpp" />
+    <ClCompile Include="src\scenes\study\S_Instance.cpp" />
+    <ClCompile Include="src\scenes\study\S_particle.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\common\glad.c" />
+    <ClCompile Include="src\common\ResourceManager.cpp" />
+    <ClCompile Include="src\common\stb_image.cpp" />
+    <ClCompile Include="src\common\texture.cpp" />
+    <ClCompile Include="src\common\Texture2D.cpp" />
+    <ClCompile Include="src\scenes\study\S_fog.cpp" />
+    <ClCompile Include="src\scenes\project\pet\S_model.cpp" />
+    <ClCompile Include="src\scenes\study\S_gerstner_water.cpp" />
+    <ClCompile Include="src\scenes\study\S_normal_mapping.cpp" />
+    <ClCompile Include="src\utils\TestExecutionTime.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\base\base_color_fs.glsl" />
+    <None Include="shaders\base\base_color_vs.glsl" />
+    <None Include="shaders\base\base_fs.glsl" />
+    <None Include="shaders\base\base_vs.glsl" />
+    <None Include="shaders\project\pet\base_fs.glsl" />
+    <None Include="shaders\project\pet\base_vs.glsl" />
+    <None Include="shaders\project\pet\particle_fs.glsl" />
+    <None Include="shaders\project\pet\particle_vs.glsl" />
+    <None Include="shaders\study\billboard\billboard.fs" />
+    <None Include="shaders\study\billboard\billboard.vs" />
+    <None Include="shaders\study\billboard\cube.fs" />
+    <None Include="shaders\study\billboard\cube.vs" />
+    <None Include="shaders\study\fog\fog.fs" />
+    <None Include="shaders\study\fog\fog.vs" />
+    <None Include="shaders\paper\marching_cubes\mc_fs.glsl" />
+    <None Include="shaders\paper\marching_cubes\mc_vs.glsl" />
+    <None Include="shaders\study\instancing\asteroids_fs.glsl" />
+    <None Include="shaders\study\instancing\asteroids_vs.glsl" />
+    <None Include="shaders\study\instancing\planet_fs.glsl" />
+    <None Include="shaders\study\instancing\planet_vs.glsl" />
+    <None Include="shaders\study\particle_system\particle_system.fs" />
+    <None Include="shaders\study\particle_system\particle_system.vs" />
+    <None Include="shaders\study\sphere\sphere.fs" />
+    <None Include="shaders\study\sphere\sphere.vs" />
+    <None Include="shaders\study\sphere\sphere_fs.glsl" />
+    <None Include="shaders\study\sphere\sphere_vs.glsl" />
+    <None Include="shaders\study\text_uv\text_uv_fs.glsl" />
+    <None Include="shaders\study\text_uv\text_uv_vs.glsl" />
+    <None Include="shaders\study\water\water_fs.glsl" />
+    <None Include="shaders\study\water\water_vs.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\scenes\project\pet\LineFrameRenderer.h" />
+    <ClInclude Include="src\scenes\study\S_text_uv.h" />
+    <ClInclude Include="src\scenes\study\S_tweak_bar.h" />
+    <ClInclude Include="src\utils\ModelGenerator.h" />
+    <ClInclude Include="src\utils\FileReadUtil.h" />
+    <ClInclude Include="src\scenes\project\pet\OctTree.h" />
+    <ClInclude Include="src\scenes\project\pet\CoinModel.h" />
+    <ClInclude Include="src\common\Camera.h" />
+    <ClInclude Include="src\scenes\GL_HEAD.h" />
+    <ClInclude Include="src\scenes\project\pet\PetMathmaticalModel.h" />
+    <ClInclude Include="src\common\shape\Cube.h" />
+    <ClInclude Include="src\common\shape\Shape.h" />
+    <ClInclude Include="src\common\shape\ShapeFactory.h" />
+    <ClInclude Include="src\common\shape\Sphere.h" />
+    <ClInclude Include="src\scenes\paper\MarchingCubes\S_MarchingCube_pointcloud.h" />
+    <ClInclude Include="src\scenes\paper\MarchingCubes\S_MarchingCube.h" />
+    <ClInclude Include="src\scenes\project\pet\ReadPetBigFile.h" />
+    <ClInclude Include="src\scenes\project\pet\S_Pet_Demo.h" />
+    <ClInclude Include="src\scenes\Scene.h" />
+    <ClInclude Include="src\scenes\SceneHead.h" />
+    <ClInclude Include="src\common\Mesh.h" />
+    <ClInclude Include="src\common\Model.h" />
+    <ClInclude Include="src\common\opengl_debug.h" />
+    <ClInclude Include="src\common\ResourceManager.h" />
+    <ClInclude Include="src\common\Shader.h" />
+    <ClInclude Include="src\common\stb_image.h" />
+    <ClInclude Include="src\common\Text2D.h" />
+    <ClInclude Include="src\common\texture.h" />
+    <ClInclude Include="src\common\Texture2D.h" />
+    <ClInclude Include="src\scenes\study\S_Instance.h" />
+    <ClInclude Include="src\scenes\study\S_particle.h" />
+    <ClInclude Include="src\scenes\study\S_fog.h" />
+    <ClInclude Include="src\scenes\project\pet\S_model.h" />
+    <ClInclude Include="src\scenes\study\S_gerstner_water.h" />
+    <ClInclude Include="src\scenes\study\S_normal_mapping.h" />
+    <ClInclude Include="src\utils\TestExecutionTime.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
