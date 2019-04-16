@@ -32,7 +32,7 @@ Scene *scene;
 
 int main()
 {
-	scene = new BillBoard();
+	scene = new S_MarchingCube();
 	if (initGlfw(scene->SCR_WIDTH, scene->SCR_HEIGHT, scene->windowTitle, scene->hiddenMouse) == 0) {
 		std::cout << "´´½¨GLFW´°¿ÚÊ§°Ü" << std::endl;
 		return -1;

@@ -1,18 +1,22 @@
 #version 330 core
-layout (location = 0) in vec3 aPos;
-layout (location = 1) in vec3 aColor;
-layout (location = 2) in vec2 aTexCoord;
+layout (location = 0) in vec3 quadVertices;
+layout (location = 1) in vec4 xyzs;
+layout (location = 2) in vec4 color;
 
-out vec3 ourColor;
-out vec2 TexCoord;
+out vec4 ourColor;
+out vec2 UV;
+out float control;
 
 uniform mat4 model;
 uniform mat4 view;
 uniform mat4 projection;
+uniform mat4 T;
 
 void main()
 {
-	gl_Position = projection * view * model * vec4(aPos, 1.0);
-	ourColor = aColor;
-	TexCoord = vec2(aTexCoord.x, aTexCoord.y);
+	vec3 vertexPosition = xyzs.xyz;
+	gl_Position = projection * view *T* model * vec4(vertexPosition + quadVertices, 1.0f);
+	ourColor = color;
+	control = xyzs.s;
+	UV = quadVertices.xy + vec2(0.5,0.5);
 }

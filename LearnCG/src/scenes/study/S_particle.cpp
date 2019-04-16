@@ -99,6 +99,7 @@ void S_particle::paintGL(float deltaTime)
 				p.speed += glm::vec3(0.0f, -9.81f, 0.0f) * (float)deltaTime * 0.5f;
 				p.pos += p.speed * (float)deltaTime;
 				p.cameradistance = glm::length(p.pos - CameraPosition);
+
 				//Ìî³äÊý¾Ý
 				g_particule_position_size_data[4 * ParticlesCount + 0] = p.pos.x;
 				g_particule_position_size_data[4 * ParticlesCount + 1] = p.pos.y;

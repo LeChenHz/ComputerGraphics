@@ -34,7 +34,7 @@ public:
 	// 根据cameradistance给粒子排序
 	void SortParticles();
 public:
-	const static int MaxParticles = 2000; //最大粒子数
+	const static int MaxParticles = 500; //最大粒子数
 	const float spread = 3.0f; //粒子扩散程度
 	const float life = 5.0; //粒子的存活时间
 	Particle ParticlesContainer[MaxParticles];
